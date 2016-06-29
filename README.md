@@ -2,7 +2,7 @@
 Pub transformer that compiles .asm files to .exe.
 
 # About
-I created this for use with my experiment [WinDart](https://github.com/thosakwe), to have Dart files in my `web` directory
+I created this for use with my experiment [WinDart](https://github.com/thosakwe/windart), to have Dart files in my `web` directory
 compiled to MASM Assembly, and then assembled and linked to .exe files.
 
 # Installation
