@@ -162,7 +162,7 @@ class MasmTransformer extends Transformer {
     var executable = new File(_getPath(asset, ".exe"));
 
     if (await executable.exists()) {
-      transform.addOutput(new Asset.fromFile(asset.id.changeExtension(".exe"), executable));
+      //transform.addOutput(new Asset.fromFile(asset.id.changeExtension(".exe"), executable));
       print("Compiled ${asset.id.path} to ${executable.absolute.path}");
 
       if (_settings.configuration['run'] == true) {

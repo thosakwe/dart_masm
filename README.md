@@ -6,10 +6,12 @@ I created this for use with my experiment [WinDart](https://github.com/thosakwe/
 compiled to MASM Assembly, and then assembled and linked to .exe files.
 
 # Installation
-You will need MASM32 installed, and it **needs** to be installed to C:\masm32. I might change this in the future.
+You will need MASM32 installed, and it to be installed to C:\masm32. Alternatively, you can pass an `masm_path` in the configuration,
+and ML and LINK will be run from that directory.
+
 ```yaml
 dependencies:
-  masm: ^1.0.0-dev
+  masm: ^1.0.0-dev needs
 ```
 
 # Usage
@@ -26,6 +28,7 @@ Supported options:
 * **run_args** (*List<String>*) - Can be included to pass them to resulting executable.
 * **ml** (*Map*) - Options to pass to ML. Option values should be strings, or `true`.
 * **link** - Same as **ml** (above), but these will be passed to LINK.
+* **masm_path** (*String*) - The path to the MASM installation. Default: `"C:\\masm32"`
 
 Defaults:
 
